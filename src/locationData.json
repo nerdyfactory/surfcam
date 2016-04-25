@@ -1,0 +1,46 @@
+{
+  "comments": "Show only South Korea for now",
+  "latitude": 35.9078,
+  "longitude": 127.7669,
+  "latitudeDelta": 5.5,
+  "longitudeDelta": 0.2,
+  "locations": [
+    {
+      "key": 1,
+      "name": "기사문 Gisamun",
+      "uri": "live-stream-url",
+      "coordinates": {
+        "latitude": 38.2,
+        "longitude": 128.725819
+      },
+      "comments": "real latitude is 38.008779, modified to make map marker not overlap with Jukdo"
+    },
+    {
+      "key": 2,
+      "name": "죽도 Jukdo",
+      "uri": "live-stream-url",
+      "coordinates": {
+        "latitude": 37.97705,
+        "longitude": 128.7599
+      }
+    },
+    {
+      "key": 3,
+      "name": "신항만 Sinhangman",
+      "uri": "live-stream-url",
+      "coordinates": {
+        "latitude": 36.0864247,
+        "longitude": 129.417572
+      }
+    },
+    {
+      "key": 4,
+      "name": "송정 Songjeong",
+      "uri": "live-stream-url",
+      "coordinates": {
+        "latitude": 35.1804468,
+        "longitude": 129.2030436
+      }
+    }
+  ]
+}
