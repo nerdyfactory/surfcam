@@ -1,16 +1,14 @@
-var React = require('react-native');
-var {
-  StyleSheet,
-  View,
-  Text,
-} = React;
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
-var LocationMarker = React.createClass({
-  getDefaultProps() {
-    return {
+class LocationMarker extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
       fontSize: 10,
     };
-  },
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -21,8 +19,8 @@ var LocationMarker = React.createClass({
         <View style={styles.arrow} />
       </View>
     );
-  },
-});
+  }
+}
 
 var styles = StyleSheet.create({
   container: {

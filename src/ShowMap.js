@@ -1,7 +1,8 @@
 'use strict';
 
-import React, {Component, StyleSheet, Dimensions} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import React, { Component } from 'react';
+import { StyleSheet, Dimensions } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import MapView from 'react-native-maps';
 
 var LocationMarker = require('./LocationMarker');
@@ -29,14 +30,9 @@ class ShowMap extends Component {
 
   onMarkerPress() {
     return e => {
-      // react-native-maps does not yet have a way to identify selected marker,
-      // this is a hack to get the index of marker
-      var markerKey = parseInt(e.dispatchMarker.slice(-1)); // get the last character
-
       var uri = this.state.markers.find(marker =>
-        marker.key === markerKey
+        marker.coordinates.latitude === e.nativeEvent.coordinate.latitude
       ).uri;
-
       Actions.video({uri: uri});
     };
   }

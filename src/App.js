@@ -1,7 +1,8 @@
 'use strict';
 
-import React, {Component, Navigator, StyleSheet, View, BackAndroid} from 'react-native';
-import {Scene, Reducer, Router, Modal, Actions} from 'react-native-router-flux';
+import React, { Component } from 'react';
+import { AppRegistry, Navigator, StyleSheet, View, BackAndroid } from 'react-native';
+import { Scene, Reducer, Router, Modal, Actions } from 'react-native-router-flux';
 
 var ShowMap = require('./ShowMap');
 var ShowVideo = require('./ShowVideo');
@@ -39,4 +40,4 @@ class App extends Component {
   }
 }
 
-export default App;
+AppRegistry.registerComponent('KoreaSurfCam', () => App);

@@ -1,7 +1,8 @@
 'use strict';
 
-import React, {Component, StyleSheet, View, Text} from 'react-native';
-import {Actions} from 'react-native-router-flux';
+import React, { Component } from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import Video from 'react-native-video';
 
 class ShowVideo extends Component {
@@ -35,6 +36,10 @@ class ShowVideo extends Component {
 
     // hide navbar in landscape mode
     Actions.refresh({hideNavBar: (width > height)});
+  }
+
+  videoError(err) {
+    console.log("video error", err);
   }
 
 
